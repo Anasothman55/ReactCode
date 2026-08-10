@@ -2,12 +2,11 @@
   "name": "react-code",
   "private": true,
   "workspaces": [
-    "projects/*"
+    "projects/*/*"
   ],
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@tanstack/react-form": "^1.33.4",
-    "@tanstack/zod-form-adapter": "^0.42.1",
     "tailwindcss": "^4.3.3",
     "zod": "^4.4.3"
   }
