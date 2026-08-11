@@ -6,8 +6,6 @@ import tseslint, { parser } from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 import tsParser from '@typescript-eslint/parser';
 
-
-
 export default defineConfig([
   globalIgnores(['dist']),
   {
@@ -17,11 +15,10 @@ export default defineConfig([
       tseslint.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
-      
     ],
     languageOptions: {
       globals: globals.browser,
-      parser: tsParser,
-    }
+      parser: tsParser
+    },
   },
 ])
