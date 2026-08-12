@@ -1,10 +1,13 @@
+import { Header } from "./components/Header"
+import { Meal } from "./components/Meal"
 
 
 function App() {
 
   return (
     <>
-      <p>Order</p>
+      <Header/>
+      <Meal/>
     </>
   )
 }
