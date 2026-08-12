@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+@layer base {
+  body {
+    font-family: "JetBrains Mono", "Times New Roman";
+  }
+}
+
+.button {
+  @apply px-2 py-1 border border-[1px] border-gray-300 cursor-pointer
+}
