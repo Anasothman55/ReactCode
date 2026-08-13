@@ -1,7 +1,8 @@
 
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { currencyFormatter } from '../utils/formatting'
 import { Button } from './ui/Button'
+import { CartContext, useCart } from '../store/cartContext'
 
 export interface MeailItemsProps {
   id: string
@@ -18,7 +19,7 @@ interface MealItemsProps {
 const server = "http://10.141.45.191:8000"
 
 export const MeailItems = ({meal}: MealItemsProps) => {
-  
+  const {addItem} = useCart()
 
   return (
     <li className='meal-item'>
@@ -30,7 +31,7 @@ export const MeailItems = ({meal}: MealItemsProps) => {
           <p className='meal-item-description'>{meal.description}</p>
         </div>
         <p className='meal-item-actions'>
-          <Button>Add to cart</Button>
+          <Button onClick={() => addItem({...meal, quantity: 0})}>Add to cart</Button>
         </p>
       </article>
     </li>

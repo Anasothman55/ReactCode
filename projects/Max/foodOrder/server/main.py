@@ -24,7 +24,7 @@ order_json = BASE_PATH / 'data' / 'orders.json'
 app = FastAPI()
 
 
-HOST: Final[str] = "0.0.0.0"
+HOST: Final[str] = "10.141.45.191"
 SERVER_PORT: Final[int] = 8000
 
 app.mount("/images", StaticFiles(directory=f"{image_dir}/images"), name="images")

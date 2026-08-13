@@ -2,7 +2,7 @@
   "name": "react-code",
   "private": true,
   "workspaces": [
-    "projects/*"
+    "projects/*/*"
   ],
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

@@ -13,7 +13,6 @@ export const useUser = (): User => {
   }
 
   return user
-
 }
 
 

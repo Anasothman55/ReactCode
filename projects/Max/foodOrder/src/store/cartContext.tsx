@@ -1,7 +1,12 @@
-import { createContext, useReducer, useState } from "react";
+import { createContext, useContext, useReducer } from "react";
 
 interface ItemsType {
-  id: string,
+  id: string
+  name: string
+  price: string
+  description: string
+  image: string
+  quantity: number
 }
 
 interface CartContextType {
@@ -10,25 +15,61 @@ interface CartContextType {
   removeItem: (id: string) => void
 }
 
-export const CartContext = createContext<CartContextType | null>(null)
+export const CartContext = createContext<CartContextType | undefined>(undefined)
 
 interface State {
   items: ItemsType[]
 }
 
-interface Action {
-  type: "add_item" | 'remove_item'
-  item: ItemsType
-}
+type Action =
+  | {
+      type: "add_item";
+      item: ItemsType;
+    }
+  | {
+      type: "remove_item";
+      id: string;
+    };
 
-function reducer (state: State, action: Action) {
-  const {type} = action
 
-  switch(type) {
-    case "add_item":
-      const 
-    case "remove_item":
-      return state
+function reducer(state: State, action: Action): State {
+  const { type } = action
+   
+  switch (type) {
+    case "add_item": {
+
+      const existIndex = state.items.findIndex((e) => e.id === action.item!.id)
+      const updatedItems = [...state.items]
+
+      if (existIndex !== -1) {
+        updatedItems[existIndex] = {
+          ...updatedItems[existIndex],
+          quantity: updatedItems[existIndex].quantity + 1,
+        };  
+      } else {
+        updatedItems.push({ ...action.item, quantity: 1 })
+      }
+      
+      return {...state, items: updatedItems}
+    }
+    case "remove_item": {
+      const existIndex = state.items.findIndex((e) => e.id === action.id)
+      if (existIndex === -1) {
+        return state
+      }
+
+      const existingItem = state.items[existIndex]
+      if (existingItem.quantity === 1) {
+        return {...state, items: state.items.filter(i=> i.id !== action.id)}
+      }
+      const updatedItems = [...state.items]
+      updatedItems[existIndex] = {
+        ...existingItem,
+        quantity: existingItem.quantity - 1,
+      }
+  
+      return {...state, items: updatedItems}
+    }
     default:
       return state
   }
@@ -37,9 +78,29 @@ function reducer (state: State, action: Action) {
 export function CartContextProvider({children}: {children: React.ReactNode}) {
   const [state, dispatch] = useReducer(reducer, {items: []})
 
+  const cartContext: CartContextType = {
+    items: state.items,
+    addItem: (item: ItemsType) => {
+      dispatch({type:"add_item", item: item})
+    },
+    removeItem: (id: string) => {
+      dispatch({type: "remove_item", id:id})
+    }
+  }
+  
   return (
-    <CartContext value={}>
+    <CartContext value={cartContext}>
       {children}
     </CartContext>
   );
+}
+
+export function useCart(): CartContextType {
+  const ctx = useContext(CartContext);
+
+  if (ctx === undefined) {
+    throw new Error("useCart must be used inside CartProvider");
+  }
+
+  return ctx;
 }
