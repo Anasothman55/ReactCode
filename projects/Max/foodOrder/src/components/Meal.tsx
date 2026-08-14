@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { MeailItems } from './MeailItems'
 
 interface mealSchema {
@@ -17,7 +17,7 @@ export const Meal = () => {
 
   useEffect(() => {
     const fetchMeal = async () => {
-      const res = await fetch(server)
+        const res = await fetch(server)
         
         if (!res.ok) {
           return <div>

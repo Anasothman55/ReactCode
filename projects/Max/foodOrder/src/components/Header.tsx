@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { logo } from '../assets'
 import { Button } from './ui/Button'
 import { useCart } from '../store/cartContext'

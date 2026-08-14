@@ -19,7 +19,7 @@ export const LoginForm = () => {
   const form = useForm({
     defaultValues: defaultFormField,
     onSubmit: async ({value}) => {
-      //console.log(value)
+      console.log(value)
     }
   })
 

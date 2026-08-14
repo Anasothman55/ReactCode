@@ -3,6 +3,7 @@ import { Header } from "./components/Header"
 import { Meal } from "./components/Meal"
 import { CartContextProvider } from "./store/cartContext"
 import { UserProgresContextProvider } from "./store/UserProgresContext"
+import Chekout from "./components/Chekout.tsx";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header/>
         <Meal/>
         <Cart/>
+        <Chekout/>
       </CartContextProvider>
     </UserProgresContextProvider>
   )

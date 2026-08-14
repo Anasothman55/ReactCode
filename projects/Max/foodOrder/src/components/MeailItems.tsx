@@ -1,8 +1,7 @@
 
-import React, { useContext, useEffect } from 'react'
 import { currencyFormatter } from '../utils/formatting'
 import { Button } from './ui/Button'
-import { CartContext, useCart } from '../store/cartContext'
+import {  useCart } from '../store/cartContext'
 
 export interface MeailItemsProps {
   id: string

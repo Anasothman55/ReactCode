@@ -1,6 +1,7 @@
+
 import { createContext, useContext, useReducer } from "react";
 
-interface ItemsType {
+export interface ItemsType {
   id: string
   name: string
   price: string
@@ -13,6 +14,7 @@ interface CartContextType {
   items: ItemsType[]
   addItem: (item: ItemsType) => void
   removeItem: (id: string) => void
+  resetItem: () => void
 }
 
 export const CartContext = createContext<CartContextType | undefined>(undefined)
@@ -29,7 +31,8 @@ type Action =
   | {
       type: "remove_item";
       id: string;
-    };
+    }
+  | { type: 'reset'};
 
 
 function reducer(state: State, action: Action): State {
@@ -70,6 +73,10 @@ function reducer(state: State, action: Action): State {
   
       return {...state, items: updatedItems}
     }
+
+    case "reset": {
+      return { ...state, items: []}
+    }
     default:
       return state
   }
@@ -85,6 +92,9 @@ export function CartContextProvider({children}: {children: React.ReactNode}) {
     },
     removeItem: (id: string) => {
       dispatch({type: "remove_item", id:id})
+    },
+    resetItem: () => {
+      dispatch({type: 'reset'})
     }
   }
   

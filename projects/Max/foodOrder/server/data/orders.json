@@ -1,1 +1,378 @@
-[]
+[
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 4435,
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": 8.99,
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a00062-d81a-7726-82d6-f8ca397f68ed"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 5345,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a00063-095e-70e5-88cd-fdb3ad1e8d29"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 665,
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": 12.99,
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a00065-566c-7616-aedd-3e434c206263"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 6436,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a00066-ab7d-748e-bd8e-c62207dfe314"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 42343,
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": 12.99,
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a00068-0cfd-717e-ae85-dc5e5c5ab312"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 66666,
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": 8.99,
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": 12.99,
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "m5",
+        "name": "Veggie Burger",
+        "price": 9.99,
+        "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+        "image": "images/veggie-burger.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000b7-9d6a-7744-8551-7f7e0aba4d92"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 646445,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 2
+      }
+    ],
+    "uid": "01a000cf-d195-740e-b00d-99eafeb73bd5"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 34524,
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": 12.99,
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000d0-4ce7-73b7-9556-2a001793a4dd"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 542354,
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": 8.99,
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000d0-ab05-7048-8547-0fa8c21c24bb"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 4234,
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": 12.99,
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000d2-e2d1-755c-9730-a6e9deca069f"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 23234,
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": 8.99,
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000d3-9de5-72d1-a005-f6dd21c92fb4"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 5345,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 3
+      }
+    ],
+    "uid": "01a000e1-160b-700c-a1c3-861e2937adca"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 534,
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": 12.99,
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 2
+      }
+    ],
+    "uid": "01a000e1-bdd9-754d-9d83-ede03d77bf03"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 5345,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 4
+      }
+    ],
+    "uid": "01a000e2-2e48-7122-b1d9-c7f2921e16d7"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 43424,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 4
+      }
+    ],
+    "uid": "01a000e2-6eb7-77a0-9db7-792f89bb3744"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 3454,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000e3-e4fb-73d3-8e7e-81d04a1fd69b"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 53455,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000e7-edcb-74fa-954f-2bdbf68afd03"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 432423,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000e8-e1c0-7533-949f-9fe2ba42c8ab"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 5345,
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": 7.99,
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000eb-ff3c-7027-8cfe-55d94359cdb8"
+  },
+  {
+    "email": "anasothman851@hotmail.com",
+    "name": "Anas Othman",
+    "street": "Shexan",
+    "city": "Said Sadiq",
+    "postal_code": 33333,
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": 8.99,
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
+      }
+    ],
+    "uid": "01a000ec-aef0-7500-94c2-04bbbba83b47"
+  }
+]

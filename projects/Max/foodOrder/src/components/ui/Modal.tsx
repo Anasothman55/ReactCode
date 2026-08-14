@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
-import { useUserProgress } from '../../store/UserProgresContext'
 
 interface ModalProps extends React.DialogHTMLAttributes<HTMLDialogElement> {
   children: React.ReactNode

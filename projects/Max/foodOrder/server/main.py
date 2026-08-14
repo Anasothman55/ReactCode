@@ -13,7 +13,7 @@ from pathlib import Path
 from rich import print
 from functools import partial
 from fastapi.staticfiles import StaticFiles
-
+import asyncio
 
 BASE_PATH: Final = Path(__file__).resolve().parent 
 image_dir = BASE_PATH / 'public'
@@ -74,13 +74,21 @@ def not_empty(v: str | EmailStr, field_name: str) -> str:
     raise ValueError(f"{field_name} must not be empty")
   return v
 
+class OrderItems(BaseModel):
+  id: str
+  name: str
+  price: float
+  description: str
+  image: str
+  quantity: int
+
 class PostOrders(BaseModel):
   email : Annotated[EmailStr, BeforeValidator(partial(not_empty, field_name="Email"))]
   name: Annotated[str, BeforeValidator(partial(not_empty, field_name="name"))]
   street: Annotated[str, BeforeValidator(partial(not_empty, field_name="street"))]
   city: Annotated[str, BeforeValidator(partial(not_empty, field_name="city"))]
-  postal_code: int
-  
+  postal_code: int 
+  items: list[OrderItems] = Field(min_length=1)
   
   model_config = ConfigDict(
     str_strip_whitespace=True,
@@ -99,13 +107,14 @@ class Order(PostOrders):
 
 @app.post('/orders')
 async def post_order(
-  body: Annotated[list[PostOrders], Body(min_length=1)]
+  body: Annotated[PostOrders, Body()]
 ):
-  orders = [Order(**o.model_dump()) for o in body]
+  await asyncio.sleep(1)
+  orders = Order(**body.model_dump())
   async with aiofiles.open(order_json, "r") as file:
     content: list[Order] = json.loads(await file.read())
 
-  content.append(*orders)
+  content.append(orders)
 
   async with aiofiles.open(order_json, "w") as file:
     await file.write(json.dumps(jsonable_encoder(content), indent=2))

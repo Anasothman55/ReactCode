@@ -1,5 +1,4 @@
 import React from 'react'
-import { extend } from 'zod/mini'
 
 interface ButtonProps
 extends React.ButtonHTMLAttributes<HTMLButtonElement>
